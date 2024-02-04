@@ -1,29 +1,39 @@
-
-
-  <div id="myTopnav"  [ngClass]="{'topnav': !isResponsive, 'responsive': isResponsive}">
-    <div class="logo">
-      <img src="assets/images/logo.png" alt="" width="200">
-    </div>
-    <div class="navigation">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">Services</a>
-      <a href="#contact">Work</a>
-      <!-- <div class="dropdown">
-        <button class="dropbtn">Dropdown 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>  -->
-      <a href="#about">Company</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="toggleResponsive()">&#9776;</a>
-
-    </div>
-    <div>
-       <button class="btn-contact">CONTACT US</button>
-    </div>
-  
+<div id="myTopnav" [ngClass]="{'topnav': !isResponsive, 'responsive': isResponsive}">
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="" width="200">
   </div>
+  <div class="navigation">
+    <a href="#home" class="active">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Software Development</a>
+        <a href="#">Data Science</a>
+        <a href="#">Mobile Development</a>
+        <a href="#">Process Consulting</a>
+      </div>
+    </div>
+    <a href="#contact">Work</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Company
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">About Us</a>
+        <a href="#">Blogs</a>
+        <a href="#">Best Practices</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="toggleResponsive()">&#9776;</a>
+
+  </div>
+  <div>
+    <button class="btn-contact">Contact Us</button>
+  </div>
+
+</div>

@@ -100,7 +100,7 @@
     background-color: #27232c;
   }
 
-  .responsive a {
+  .responsive a{
 
     float: none;
     text-align: left;
@@ -112,6 +112,28 @@
     font-size: 17px;
     background-color: #AABBCC;
   }
+  .responsive .dropdown {
+    float: none;
+    background-color: #AABBCC;
+
+  }
+
+  .responsive .dropdown-content {
+    position: relative;
+
+  }
+
+  .responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .responsive a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #AABBCC;
+  color: #A71AFB;
+}
+  
 
   .responsive .btn-contact,
   .responsive .icon {
@@ -162,4 +184,8 @@
 
 .btn-contact {
   background-color: #A71AFB;
+  padding: 8px 25px;
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 15px;
 }
