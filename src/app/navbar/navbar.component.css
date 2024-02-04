@@ -16,6 +16,9 @@
   padding-left: 5rem;
   padding-right: 5rem;
 }
+/* .navigation button {
+  display: none;
+} */
 
 
 .topnav a {
@@ -82,10 +85,13 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   .topnav a,
   .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav .contact-us {
     display: none;
   }
 
@@ -95,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .responsive {
     background-color: #27232c;
   }
@@ -111,6 +117,9 @@
     text-decoration: none;
     font-size: 17px;
     background-color: #AABBCC;
+  }
+  .responsive .contact-us{
+    display: none;
   }
   .responsive .dropdown {
     float: none;

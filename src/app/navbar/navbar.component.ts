@@ -15,6 +15,9 @@ export class NavbarComponent {
     this.isResponsive = !this.isResponsive;
   }
 
+onCloseClick(){
+  this.isResponsive = !this.isResponsive;
+}
 
 
   
